@@ -1,0 +1,17 @@
+{
+    "name": "colorbit",
+    "version": "0.1.0",
+    "description": "ColorBit",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "ws2812b": "github:Microsoft/pxt-ws2812b#v0.0.4"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "coloricons.jres",
+        "_locales/zh/colorbit-strings.json"
+    ],
+    "public": true
+}

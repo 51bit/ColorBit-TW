@@ -73,6 +73,7 @@
   "colorbit.Strip.showScrollStringColor|block": "%colorbit_51bit|顯示 ColorBit 滾動字串： %input|且顏色為 %rgb=colorbit_colors",
   "colorbit.Strip.showScrollIntColor|block": "%colorbit_51bit|顯示 ColorBit 滾動數位： %input|且顏色為 %rgb=colorbit_colors",
   "colorbit.Strip.setPixelWhiteLED|block": "%colorbit_51bit|設置白燈(RGB+W) 圖元%pixeloffset|為 %white",
+  "colorbit.Strip.drawColorBit|block": "%colorbit_51bit|繪圖ColorBit 在 x %x|y %y|為 %rgb=colorbit_colors",
   "colorbit.Strip.show|block": "%colorbit_51bit|刷新顯示",
   "colorbit.Strip.clear|block": "%colorbit_51bit|清除顯示",
   "colorbit.Strip.length|block": "%colorbit_51bit|LED的數目",

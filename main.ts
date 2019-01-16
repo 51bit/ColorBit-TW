@@ -627,10 +627,31 @@ namespace colorbit {
                 let y=a[indexl];
                 if((y>=0) && (y<=9)) str = str+ y;
             }
-			this.showScrollStringColor(str, rgb);
-		}
+	    this.showScrollStringColor(str, rgb);
+	}
 
-        /**
+	/**
+         * Set LED to a given color (range 0-255 for r, g, b) in ColorBit
+         * @param x horizontal position
+         * @param y horizontal position
+         * @param rgb RGB color of the LED
+         */
+        //% blockId="colorbit_draw_colorbit" block="%colorbit_51bit|draw ColorBit at x %x|y %y|to %rgb=colorbit_colors" 
+        //% weight=20
+        //% parts="colorbit"
+        drawColorBit(x: number, y: number, rgb: number) {
+            x = x >> 0;
+            y = y >> 0;
+            rgb = rgb >> 0;
+            const cols = Math.idiv(this._length, 5);
+            if (x < 0 || x >= 5 || y < 0 || y >= cols) return;
+            let i = x + y * 5;
+            this.setPixelColor(i, rgb);
+            this.show();
+        }
+        
+	
+	/**
          * Shows a rainbow pattern on all LEDs. 
          * @param startHue the start hue value for the rainbow, eg: 1
          * @param endHue the end hue value for the rainbow, eg: 360
